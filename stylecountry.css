@@ -1,0 +1,16 @@
+body
+{
+    overflow: hidden;
+}
+
+#countryin
+{
+    height: 30px;
+    text-align: center;
+    font-size: larger;
+    width: 220px;
+    position: absolute;
+    top: 110px;
+    left: 46px;
+    border-radius: 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tailwind clock</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="clockbody">
+ 
+  <div class=" w-screen h-screen flex flex-col justify-center items-center bg-yellow-500 ">
+
+    <div class="userinput">
+      <!-- <input type="text" name="countryinput" id="countryinput" placeholder=" Enter any Country Name"> -->
+      <iframe src="countrylist.html" id="countryinput" ></iframe>
+    </div>
+
+      <div id="date" class="py-5 font-extrabold">
+        26.08.2023
+      </div>
+
+    <!-- clock components start -->
+    <!-- main frame div -->
+    <div class="w-72 h-72 bg-clockframe rounded-full flex flex-col justify-center items-center ">
+
+      <!-- white circle div -->
+      <div class="w-64 h-64 bg-white rounded-full relative">
+        <div id="sec" class="w-64 h-64 absolute  flex  flex-col items-center ">
+          <div class="rounded-lg w-1 h-[35%]  bg-red-600 absolute top-[15%] "></div>
+        </div>
+        <div id="minute" class="w-64 h-64 absolute flex flex-col  items-center ">
+          <div class="rounded-lg w-1 h-[30%] bg-black absolute top-[20%] "></div>
+        </div>
+        <div id="hour" class="w-64 h-64 absolute flex flex-col  items-center">
+          <div class="rounded-lg w-2 h-[20%] bg-black absolute top-[30%] "></div>
+        </div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64 ">12</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[30deg]">1</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[60deg]">2</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[90deg]">3</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[120deg]">4</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[150deg]">5</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[180deg]">6</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[210deg]">7</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[240deg]">8</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[270deg]">9</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[300deg]">10</div>
+        <div class="absolute  text-center font-extrabold  w-64 h-64  transform rotate-[330deg]">11</div>
+      </div>
+    </div>
+    <!-- clock components end-->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
